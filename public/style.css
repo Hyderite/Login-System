@@ -1,0 +1,121 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.body {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+#txt1 {
+  font-size: 50px;
+  animation: fadein 1.5s;
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+}
+
+#pw {
+  border-radius: 12px;
+  border-color: #000;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  outline: none;
+}
+
+#submit {
+  background-color: #000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Montserrat;
+  margin: 4px 2px;
+  border-radius: 20px;
+  width: 125px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submit:hover {
+  background-color: #fff;
+  color: #000;
+  border: 4px solid black;
+}
+
+#parent {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  cursor: help;
+  margin: 4px 2px;
+  top: 95%;
+  left: 97.5%;
+  font-weight: bold;
+}
+
+#parent #help {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -45%;
+  right: 110%;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+#parent:hover #help {
+  visibility: visible;
+  opacity: 1;
+}
